@@ -1,0 +1,30 @@
+/* General */
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header{
+    background-color:#fff;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+#navbar img{
+    width: 2.5rem;
+}
+
+
+footer p {
+    text-align: center;
+    font-weight: bolder;
+}
