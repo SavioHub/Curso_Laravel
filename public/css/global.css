@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* reset do navegador */
+
+html{
+    --black: #000;
+    --white: #fff;
+    --green: #0FA50F;
+    --brown: #B9B904;
+    --border: #ccc;
+
+    font-size: 62.5%; /*10px*/
+}
+/* 1 rem = 16px, 16px = 100% User agent */
+
+.sr-only{
+    position: absolute; /*iguinora todos os outros elementos*/
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden; /*para não ter barra de rolagem*/
+    clip-path: rect(0,0,0,0); /*posicionando ele no canto, top, botoom, left, right*/
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+body, header, form, input, button{
+    /* intervalo de tamanho */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    /* 14px é o minimo de tamano,
+    1.6rem é o padrão,
+    2vw é o maximo */
+
+    font-family: 'Roboto';
+}
+
+
+header{
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/* Navbar HEADER*/
+#navbar img{
+    width: 5rem;
+    height: 3rem;
+}
+
+#navbar{
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 3px 0;
+}
+
+#navbar a{
+    font-size: 1.6rem;
+}
+
+#navbar a{
+    color: #000;
+    font-size: 1.6rem;
+}
+#navbar a:hover{
+    color: #B9B904;
+    font-size: 1.6rem;
+}
