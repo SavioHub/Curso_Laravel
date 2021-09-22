@@ -44,7 +44,7 @@ body {
 
 body, header, form, input, button{
     /* intervalo de tamanho */
-    font-size: clamp(14px, 1.6rem, 2vw);
+    font-size: clamp(1.4rem, 1.6rem, 2vw);
     /* 14px é o minimo de tamano,
     1.6rem é o padrão,
     2vw é o maximo */
@@ -59,54 +59,102 @@ header{
 }
 
 
-footer p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.6rem;
+/* Navbar HEADER*/
+#navbar{
+    justify-content: space-between;
+    background-color:var(--green);
+    padding: 3px 0;
+
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: -0.5rem;
+    margin-top: -0.5rem;
 }
 
-/* Navbar HEADER*/
 #navbar img{
     width: 5rem;
     height: 3rem;
 }
 
-#navbar{
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 3px 0;
-}
 
-#navbar a{
-    font-size: 1.6rem;
-}
-
-#navbar a{
+#navbar .navbar-nav .nav-item a{
     color: #000;
     font-size: 1.6rem;
 }
-#navbar a:hover{
+#navbar .navbar-nav .nav-item a:hover{
     color: #B9B904;
     font-size: 1.6rem;
 }
 
-/* Footer inicio */
-.footer-fim{
-    display: flex;
-    margin: 0;
-    background: #f2f2f2;
-    height: 30rem;
-    width: 100vw;
-    justify-content: center;
+/* Input inicio*/
+#search{
+    border: .2rem solid var(--black);
+    padding: 0 1.6rem;
+    height: 4rem;
+    border-radius: 1rem;
+    width: 60rem;
+
+}
+
+
+.input-class::-webkit-input-placeholder { /* Chrome, Safari, Opera */
     color: var(--black);
+    /* margin: 0 auto; */
+    width: 50%;
+    opacity: 0.5;
+
 }
 
-.container-footer{
-    background: red;
-
+.input-class:-moz-placeholder { /* Firefox 18- */
+    color: var(--black);
+    opacity: 0.5;
+    /* margin: 0 auto; */
+    width: 50%;
 }
 
-.bg-footer{
+.input-class::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--black);
+    opacity: 0.5;
+    /* margin: 0 auto; */
+    width: 50%;
+}
+/* input fim */
+
+
+/* Footer inicio */
+.footer-container{
+    /* display: flex; */
+    text-align: center;
+    background: var(--green);
+    color: var(--black);
+
+    padding: 1rem;
+    position: absolute;
+    bottom: 0; /*Para Não sobrar espaço no fim da pag*/
+    width: 100%;
+    /* justify-content: center; */
+
+    
+}
+
+.footer-container p{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    line-height: 2rem;
+    opacity: 0.5;
+}
+
+.footer-container .title{
+    margin-bottom: 1rem;
+}
+.footer-container .sub-title{
+    margin-bottom: 1rem;
+}
+
+/* .bg-footer{
     display: block;
     overflow: hidden;
     line-height: 2rem;
@@ -117,4 +165,4 @@ footer p {
     align-items: center;
     font-size: 1.2rem;
     opacity: 0.5;
-}
+} */

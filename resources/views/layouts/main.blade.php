@@ -35,7 +35,6 @@
 
                         <form action="">
                             <label class="sr-only" for="search">Buscar por produtos</label>
-                            {{-- <input type="text" id="search" name="search" class="form-control" placeholder="buscar por produto"> --}}
                             <input type="text" id="search" name="search" class="input-class" placeholder="buscar por produto">
 
                             <a href="/" class="button">
@@ -48,6 +47,8 @@
                                 <a href="/" class="nav-link">Contatos</a>
                             </li> <li class="nav-item">
                                 <a href="/events/create" class="nav-link">Sobre</a>
+                            </li> <li class="nav-item">
+                                <a href="/events/create" class="nav-link">Serviços</a>
             
                         </ul>
     
@@ -57,30 +58,18 @@
             
             @yield('content')
     
-            <div class="footer-fim">
+            <div class="footer-container">
 
                 <footer>
-                    <p> Agro Vendas &copy; 2022</p>
-                </footer>
-                
-            </div>
+                    <p class="title"> Agro Vendas &copy; 2022</p>
 
-            <div class="container-footer">
-                <div class="bg-footer">
-                    <p>Preços e condições de pagamento exclusivos para compras via internet,
+                    <p class="sub-title">Preços e condições de pagamento exclusivos para compras via internet,
                         podendo variar nas lojas físicas. Ofertas válidas na compra de até 5 
                         peças de cada produto por cliente, até o término dos nossos estoques para internet. Caso os produtos apresentem divergências de valores, o preço válido é o da Sacola de compras.<br>
                         Vendas sujeitas a análise e confirmação de dados.
-                        
-                        Magazine Luiza S/A - CNPJ: 47.960.950/1088-36
-                        
-                        Endereço: Rua Arnulfo de Lima, 2385 - Vila Santa Cruz, Franca/SP - CEP 14.403-471
-                        Endereço eletrônico: www.magazineluiza.com.br – ® Magazine Luiza – Todos os direitos reservados
-                        Fale conosco: https://www.magazineluiza.com.br/central-de-atendimento/fale-conosco/
                     </p>
-    
-                </div>
-
+                </footer>
+                
             </div>
 
         </div>
