@@ -19,7 +19,11 @@
 
         {{-- CSS Bootsrap --}}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        {{-- Icons --}}
+        {{-- import SearchIcon from '@mui/icons-material/Search'; --}}
     </head>
+
     <body>
         <div id="home" class="content">
             <header>
@@ -28,18 +32,23 @@
                         <a href="/" class="navbar-brand">
                             <img src="/img/Agro_vendas.png" alt="logo do site">
                         </a>
+
+                        <form action="">
+                            <label class="sr-only" for="search">Buscar por produtos</label>
+                            {{-- <input type="text" id="search" name="search" class="form-control" placeholder="buscar por produto"> --}}
+                            <input type="text" id="search" name="search" class="input-class" placeholder="buscar por produto">
+
+                            <a href="/" class="button">
+                                <img src="/img/buscar.svg" alt="buscar">
+                            </a>
+                        </form>
     
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="/" class="nav-link">Eventos</a>
+                                <a href="/" class="nav-link">Contatos</a>
                             </li> <li class="nav-item">
-                                <a href="/events/create" class="nav-link">Criar Eventos</a>
-                            </li> <li class="nav-item">
-                                <a href="/" class="nav-link">Entrar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/" class="nav-link">Cadastrar</a>
-                            </li>
+                                <a href="/events/create" class="nav-link">Sobre</a>
+            
                         </ul>
     
                     </div>
@@ -48,10 +57,32 @@
             
             @yield('content')
     
-            <footer>
-                <p> Agro Vendas &copy; 2022</p>
-            </footer>
-            
+            <div class="footer-fim">
+
+                <footer>
+                    <p> Agro Vendas &copy; 2022</p>
+                </footer>
+                
+            </div>
+
+            <div class="container-footer">
+                <div class="bg-footer">
+                    <p>Preços e condições de pagamento exclusivos para compras via internet,
+                        podendo variar nas lojas físicas. Ofertas válidas na compra de até 5 
+                        peças de cada produto por cliente, até o término dos nossos estoques para internet. Caso os produtos apresentem divergências de valores, o preço válido é o da Sacola de compras.<br>
+                        Vendas sujeitas a análise e confirmação de dados.
+                        
+                        Magazine Luiza S/A - CNPJ: 47.960.950/1088-36
+                        
+                        Endereço: Rua Arnulfo de Lima, 2385 - Vila Santa Cruz, Franca/SP - CEP 14.403-471
+                        Endereço eletrônico: www.magazineluiza.com.br – ® Magazine Luiza – Todos os direitos reservados
+                        Fale conosco: https://www.magazineluiza.com.br/central-de-atendimento/fale-conosco/
+                    </p>
+    
+                </div>
+
+            </div>
+
         </div>
         
     </body>

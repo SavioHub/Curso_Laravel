@@ -4,15 +4,7 @@
 
 @section('content')
 
-<div id="search-container" class="col-md-12">
-    <h2>Busque um produto</h2>
-
-    <form action="">
-        <label class="sr-only" for="search">Busca por produtos</label>
-        <input type="text" id="search" name="search" class="form-control" placeholder="Procurar">
-        <button>buscar</button>
-    </form>
-</div>
+<div id="container" class="col-md-12"></div>
 
 <div id="events-container" class="col-md-12">
     <h3>Listas de produtos</h3>

@@ -1,39 +1,6 @@
 
-.row{
-    margin: 0;
-    flex-direction: row;
-}
-
-.card-body{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex:0;
-}
-
-
-.container-fluid{
-    padding: 0;
-}
-
-#cards-container .card img{
-    height: 100%;
-    width: 100%;
-}
-
-#btn{
-    background-color: var(--green);
-    border: 2px solid var(--border);
-    color: var(--black);
-}
-
-#btn:hover{
-    background-color: var(--brown);
-    border-color: var(--brown);
-}
-
 /* search container */
-#search-container{
+#container{
     background-image: url(../img/Agro_vendas_banner.png);
     background-size: cover;
     -webkit-background-size: cover;
@@ -46,26 +13,45 @@
     background-position: center;
     height: 100vh;
     padding: 2rem;
-    text-align: center;
 }
 
-#search-container h2{
+
+/* Input inicio*/
+#search{
+    border: .2rem solid var(--black);
+    padding: 0 1.6rem;
+    height: 4rem;
+    border-radius: 1rem;
+    width: 60rem;
+
+}
+
+
+.input-class::-webkit-input-placeholder { /* Chrome, Safari, Opera */
     color: var(--black);
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
+
 }
 
-#seach-container form{
-    width: 50%;
-    margin: 0 auto;
+.input-class:-moz-placeholder { /* Firefox 18- */
+    color: var(--black);
+    opacity: 1;
+}
+
+.input-class::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--black);
+    opacity: 0.5;
+}
+/* input fim */
+
+.content form{
+    display: flex;
+    /* margin: 0 auto; */
     justify-content: center;
     align-items: center;
+    width: 50%;
+
 }
 
-/* #seach-container .form-control{
-    
-} */
 
 /* Events list */
 
@@ -101,15 +87,62 @@
     
 }
 
-.card .card-date{
+/* #cards-container{
+    display: flex;
+}
+
+/* .row{
+    margin: 0;
+    flex-direction: row;
+} */ 
+
+#cards-container .card-body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex:0;
+}
+
+
+.container-fluid{
+    padding: 0;
+}
+
+#cards-container .card img{
+    height: 100%;
+    width: 100%;
+}
+
+#cards-container .card .card-date{
     font-size: 1.6rem;
     color: #B9B904;
 }
 
-.card .card-title{
+#cards-container .card .card-title{
     font-size: 2rem;
 }
 
-#cards-container{
+#cards-container .card .card-participants{
+    font-size: 1.6rem;
+}
+
+#cards-container .card .card-body #btn{
+    background-color: var(--green);
+    border: 2px solid var(--border);
+    color: var(--black);
+    border-radius: .8rem;
+    width: 8.5rem;
+    height: 4rem;
     display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+#cards-container .card #btn:hover{
+    background: var(--brown);
+    border-color: var(--brown);
+    border-radius: .8rem;
 }

@@ -34,6 +34,7 @@ html{
     width: 100%;
     margin: 0 auto;
 }
+
 body {
     min-height: 100vh;
     max-width: 100vw;
@@ -87,4 +88,33 @@ footer p {
 #navbar a:hover{
     color: #B9B904;
     font-size: 1.6rem;
+}
+
+/* Footer inicio */
+.footer-fim{
+    display: flex;
+    margin: 0;
+    background: #f2f2f2;
+    height: 30rem;
+    width: 100vw;
+    justify-content: center;
+    color: var(--black);
+}
+
+.container-footer{
+    background: red;
+
+}
+
+.bg-footer{
+    display: block;
+    overflow: hidden;
+    line-height: 2rem;
+    text-align: center;
+    padding: 1.2rem;
+    margin: 0 auto;
+    width: 97.8rem;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0.5;
 }
