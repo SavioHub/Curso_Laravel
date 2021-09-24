@@ -29,7 +29,7 @@
             <header>
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div id="navbar" class="collapse navbar-collapse">
-                        <a href="/" class="navbar-brand">
+                        <a href="/" class="navbar-logo">
                             <img src="/img/Agro_vendas.png" alt="logo do site">
                         </a>
 
@@ -44,11 +44,11 @@
     
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="/" class="nav-link">Contatos</a>
+                                <a href="/events/contact" class="nav-link">Contatos</a>
                             </li> <li class="nav-item">
-                                <a href="/events/create" class="nav-link">Sobre</a>
+                                <a href="/events/sobre" class="nav-link">Sobre</a>
                             </li> <li class="nav-item">
-                                <a href="/events/create" class="nav-link">Serviços</a>
+                                <a href="/events/services" class="nav-link">Serviços</a>
             
                         </ul>
     
@@ -61,7 +61,7 @@
             <div class="footer-container">
 
                 <footer>
-                    <p class="title"> Agro Vendas &copy; 2022</p>
+                    <h3 class="title"> Agro Vendas &copy; 2022</h3>
 
                     <p class="sub-title">Preços e condições de pagamento exclusivos para compras via internet,
                         podendo variar nas lojas físicas. Ofertas válidas na compra de até 5 

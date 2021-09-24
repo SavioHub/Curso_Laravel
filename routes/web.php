@@ -21,4 +21,4 @@ Route::get('/', [EventController::class, 'index']);//index é o nome da action
 Route::get('/events/create', [EventController::class, 'create']);//create é o nome da action
 
 
-Route::get('/contact',[ContactController::class,'index']);
+Route::get('/events/contact',[ContactController::class,'contact']);

@@ -51,19 +51,23 @@
 #events-container .card{
     flex: 1 1 0;
     max-width: 25%;
-    border-radius: 10px;
+    border-radius: 1rem;
     padding: 0;
-    margin: 5px;
+
+    margin: 1rem;
 }
 
-#events-container .card img{
+#events-container #cards-container .card img{
     /* max-width: 19.25rem; */
     max-height: 15rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
+/* Cards container inicio */
+#cards-container{
+    display: flex;
+}
 
 #cards-container .card-body{
     text-align: center;
@@ -77,14 +81,13 @@
     padding: 0;
 }
 
-#cards-container .card img{
-    height: 100%;
-    width: 100%;
-}
+/* #cards-container .card img{
+    
+} */
 
 #cards-container .card .card-date{
     font-size: 1.6rem;
-    color: #B9B904;
+    color: var(--brown);
 }
 
 #cards-container .card .card-title{
@@ -97,29 +100,28 @@
 #cards-container .card .card-participants{
     font-size: 1.6rem;
     color: var(--brown);
-    font-weight: bold;
-    opacity: 0.7;
+    /* font-weight: bold;
+    opacity: 0.7; */
 }
 
 #cards-container .card .card-body #btn{
     background: var(--green);
-    border: 1.5px solid var(--brown);
+    border: 2px solid var(--brown);
     color: var(--black);
     border-radius: .8rem;
     min-width: 8.5rem;
     min-height: 4rem;
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
-
-    /* align-items: center; */
     
 }
 
 #cards-container .card .card-body #btn:hover{
-    background: var(--brown);
+    background: var(--transition);
     border-color: var(--brown);
+    transition: 0.5s;
 }
 
 /* Cards Container fim */
