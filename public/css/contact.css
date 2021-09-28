@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* width: 100vw; */
+    background: var(--white);
+}
+
+.container form{
+    /* display: flex; */
+    flex-direction: column;
+    font-size: 1.6rem;
+    
+    background: var(--white);
+}
+.container .container-beta{
+    background: var(--border);
+    border-radius: 1rem;
+
+    padding: 5rem;
+}
+
+.container #teste{
+    color:blue;
+    font-size: 2rem;
+}
+
+.container .form-container{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: left;
+    
+    align-items: center;
+    justify-items: center;
+    /* display: flex; */
+}
+
+.container form input{
+    border-radius: 1rem;
+    font-size: 1.4rem;
+}
+.container form select{
+    border-radius: 1rem;
+    font-size: 1.4rem;
+
+}
+.container form textarea{
+    border-radius: 1rem;
+    font-size: 1.4rem;
+}
+.container form .btn{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white);
+
+
+}
+.container .form-contact .contact-title{
+    font-size: 1.6rem;
+    color: var(--black);
+    font-weight: bold;
+}

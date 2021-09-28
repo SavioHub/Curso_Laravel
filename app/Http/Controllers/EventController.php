@@ -18,7 +18,7 @@ class EventController extends Controller
         return view('welcome', ['events' => $events]);//passando o events para a view
     }
 
-    public function create(){
-        return view('events.create');
+    public function sobre(){
+        return view('events.sobre'); //OBS: Criar um controoler para SOBRE
     }
 }

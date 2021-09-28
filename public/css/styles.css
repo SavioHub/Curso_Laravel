@@ -1,5 +1,4 @@
 
-/* search container */
 #container{
     background-image: url(../img/Agro_vendas_banner.png);
     background-size: cover;
@@ -67,6 +66,8 @@
 /* Cards container inicio */
 #cards-container{
     display: flex;
+    background: chartreuse;
+    padding: 2rem;
 }
 
 #cards-container .card-body{
@@ -125,3 +126,4 @@
 }
 
 /* Cards Container fim */
+

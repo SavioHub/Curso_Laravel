@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/contact.css">
 
         <script src="/js/index.js"></script>
 
@@ -36,6 +37,7 @@
                         <form action="">
                             <label class="sr-only" for="search">Buscar por produtos</label>
                             <input type="text" id="search" name="search" class="input-class" placeholder="buscar por produto">
+                        
 
                             <a href="/" class="button">
                                 <img src="/img/buscar.svg" alt="buscar">
