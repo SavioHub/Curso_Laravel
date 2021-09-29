@@ -17,12 +17,16 @@
     background: var(--border);
     border-radius: 1rem;
 
+    
     padding: 5rem;
 }
 
 .container #teste{
-    color:blue;
+    color: var(--black);
     font-size: 2rem;
+    font-weight: bold;
+
+    text-align: center;
 }
 
 .container .form-container{
@@ -35,28 +39,71 @@
     /* display: flex; */
 }
 
+
 .container form input{
     border-radius: 1rem;
     font-size: 1.4rem;
+    border: 1px solid var(--border)
 }
 .container form select{
     border-radius: 1rem;
     font-size: 1.4rem;
-
+    border: 1px solid var(--border)
 }
 .container form textarea{
     border-radius: 1rem;
     font-size: 1.4rem;
+    border: 1px solid var(--border);
+
+    resize: none; /*tirar a barrinha do canto*/
+    overflow: auto;
+
 }
-.container form .btn{
+
+.container form .form-container .btn{
     text-align: center;
-    font-size: 1.2rem;
-    color: var(--white);
-
-
-}
-.container .form-contact .contact-title{
     font-size: 1.6rem;
     color: var(--black);
+    background: var(--green);
+    border-radius: 1rem;
+
+    margin-top: .5rem;
+}
+.container form .form-container .btn:hover{
+    background: #0fc93e;
+}
+
+.container .form-container .contact-title{
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+.msg{
+    background: #0fc93e;
+    color: var(--white);
+    font-size: 1.4rem;
     font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+
+    width: 50%;
+    top: 1rem;
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+
+#link-home{
+    color: var(--black);
+    text-align: center;
+    background: red;
+    border-radius: 1rem;
+    border: 2px solid var(--border);
+    margin-top: .5rem;
+}
+#link-home .but{
+    background: red;
+    font-weight: bold;
+
 }

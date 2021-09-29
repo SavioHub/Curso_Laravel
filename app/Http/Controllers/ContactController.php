@@ -24,7 +24,7 @@ class ContactController extends Controller
         $event->save();
         //metodo save para salvar os dados
 
-        return redirect('/');
+        return redirect('/events/contact')->with('msg', 'Produto adicionado com sucesso'); //metodo with cria uma mensagem ao usuário
         // redirecionando para uma página
     }
 }
