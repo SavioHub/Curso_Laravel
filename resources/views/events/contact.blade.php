@@ -12,25 +12,43 @@
             
             <div class="form-container">
                 <label class="contact-title" class="contact-title" for="title">Evento:</label>
-                {{-- <label for="sr-only" class="form-control">Nome do evento</label> --}}
+
+                <label for="title" class="sr-only">Nome do evento</label>
+
                 <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
             </div>
     
             <div class="form-container">
                 <label class="contact-title" for="title">Cidade:</label>
-                {{-- <label class="contact-title" for="sr-only" class="form-control">Nome do evento</label> --}}
-                <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento">
+
+                <label class="sr-only" for="city" class="form-control">Nome do evento</label>
+
+                <input type="text" class="form-control" id="city" name="city" placeholder="Local de produção">
             </div>
     
             <div class="form-container">
                 <label class="contact-title" for="title">O evento é privado?</label>
-                {{-- <label class="contact-title" for="sr-only" class="form-control">Nome do evento</label> --}}
+                
                 <select name="private" id="private" class="form-control">
                     <option value="0">Nâo</option>
                     <option value="1">Sim</option>
                 </select>
             </div>
     
+            <div class="form-container">
+                <label class="contact-title" for="title">Data:</label>
+
+                <label class="sr-only" for="date" >Data de fabricação:</label>
+                <input type="date" class="form-control" id="date" name="date" placeholder="Data de fabricação">
+            </div>
+
+            <div class="form-container">
+                <label class="contact-title" for="title">Quantidade:</label>
+
+                <label class="sr-only" for="amount" >Quantidade para oferta:</label>
+                <input type="text" class="form-control" id="amount" name="amount" placeholder="Quantidade para oferta">
+            </div>
+
             <div class="form-container">
                 <label class="contact-title" for="title">Descrição:</label>
 
@@ -39,14 +57,18 @@
                 {{-- <input type="submit" class="btn btn-primary" value="Criar Evento"> --}}
                 <button class="btn btn-primary">Criar Evento</button>
             </div>
-        </div>
 
+           
+        </div>
+        {{-- Flash Message inicio --}}
         <main>
             <div class="container-fluid">
                 <div class="row">
                     
                     @if (session('msg'))
-                        <p class="msg">{{session('msg')}}</p>
+                        <div class="msg-container">
+                            <p class="msg">{{session('msg')}}</p>
+                        </div>
                     @endif
 
                     <a id="link-home" href="/"> 
@@ -57,6 +79,7 @@
                 
             </div>
         </main>
+        {{-- Flash Message fim --}}
     </form>
 </div>
 @endsection

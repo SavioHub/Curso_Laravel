@@ -19,6 +19,9 @@ class ContactController extends Controller
         $event->title = $request->title;
         $event->city = $request->city;
         $event->private = $request->private;
+        $event->date = $request->date;
+        $event->amount = $request->amount;
+        // Amount é a quantidade de oferta
         $event->description = $request->description;
 
         $event->save();

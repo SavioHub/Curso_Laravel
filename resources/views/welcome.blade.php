@@ -17,25 +17,25 @@
                 <img src="/img/Agro_vendas.png" alt="{{$event->title}}">
                 
                 <div class="card-body">
-                    <p class="card-date">13/09/2021</p>
+                    <p class="card-date">{{$event->date}}</p>
                     <h5 class="card-title">{{$event->title}}</h5>
-                    <p class="card-participants">X Kg disponiveis</p>
+                    <p class="card-participants">{{$event->amount}} disponiveis</p>
                     <a href="#" class="btn btn-primary" id="btn">Saber nais</a>
                 </div>
 
                 <img src="/img/Agro_vendas.png" alt="{{$event->title}}">
                 <div class="card-body">
-                    <p class="card-date">13/09/2021</p>
+                    <p class="card-date">{{$event->date}}</p>
                     <h5 class="card-title">{{$event->title}}</h5>
-                    <p class="card-participants">X participantes</p>
+                    <p class="card-participants">{{$event->amount}} disponiveis</p>
                     <a href="#" class="btn btn-primary" id="btn">Saber nais</a>
                 </div>
 
                 <img src="/img/Agro_vendas.png" alt="{{$event->title}}">
                 <div class="card-body">
-                    <p class="card-date">13/09/2021</p>
+                    <p class="card-date">{{$event->date}}</p>
                     <h5 class="card-title">{{$event->title}}</h5>
-                    <p class="card-participants">X participantes</p>
+                    <p class="card-participants">{{$event->amount}} disponiveis</p>
                     <a href="#" class="btn btn-primary" id="btn">Saber nais</a>
                 </div>
             </div>
