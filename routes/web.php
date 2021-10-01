@@ -22,5 +22,5 @@ Route::get('/events/sobre', [EventController::class, 'sobre']);//create é o nom
 
 Route::get('/events/contact',[ContactController::class,'contact']);
 
-Route::post('/events', [ContactController:: class, 'store']);
+// Route::post('/events', [ContactController:: class, 'store']);
 //todos os dados do formulário irá para o contactController
