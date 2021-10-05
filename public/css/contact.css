@@ -138,3 +138,8 @@
     font-weight: bold;
     text-align: center;
 }
+
+#image{
+    color: var(--black);
+    font-size: 1.2rem;
+}

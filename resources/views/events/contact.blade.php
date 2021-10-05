@@ -4,12 +4,18 @@
 
 <div id="contact-container" class="container d-flex flex-column justify-content-center align-items-center">
     
-    <form action="/events" method="POST">
+    <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
         
         <div class="container-beta">
             <h1 id="teste">Crie o seu evento</h1>
             
+            <div class="form-container">
+                <label class="contact-title" class="contact-title" for="image">Imagem do Evento:</label>
+
+                <input type="file" id="image" name="image" class="from-control-file">
+            </div>
+
             <div class="form-container">
                 <label class="contact-title" class="contact-title" for="title">Evento:</label>
 
@@ -26,14 +32,14 @@
                 <input type="text" class="form-control" id="city" name="city" placeholder="Local de produção">
             </div>
     
-            <div class="form-container">
+            {{-- <div class="form-container">
                 <label class="contact-title" for="title">O evento é privado?</label>
                 
                 <select name="private" id="private" class="form-control">
                     <option value="0">Nâo</option>
                     <option value="1">Sim</option>
                 </select>
-            </div>
+            </div> --}}
     
             <div class="form-container">
                 <label class="contact-title" for="title">Data:</label>

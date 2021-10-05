@@ -14,7 +14,8 @@ class Event extends Model
         'private',
         'date',
         'amount',
-        'user_id'
+        'user_id',
+        'image'
     ];
 
     /**
