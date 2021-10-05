@@ -14,17 +14,21 @@ class ContactController extends Controller
 
     public function store(Request $request) {
         
-        $event = new Event;
+        // $event = new Event;
 
-        $event->title = $request->title;
-        $event->city = $request->city;
-        $event->private = $request->private;
-        $event->date = $request->date;
-        $event->amount = $request->amount;
+        // dump($request->all());
+
+        // $event->title = $request->title;
+        // $event->city = $request->city;
+        // $event->private = $request->private;
+        // $event->date = $request->date;
+        // $event->amount = $request->amount;
         // Amount é a quantidade de oferta
-        $event->description = $request->description;
+        // $event->description = $request->description;
 
-        $event->save();
+        Event::create($request->all());
+
+        // $event->save();
         //metodo save para salvar os dados
 
         return redirect('/events/contact')->with('msg', 'Produto adicionado com sucesso'); //metodo with cria uma mensagem ao usuário

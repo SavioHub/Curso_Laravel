@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ContactController;
 
-Route::get('/', [EventController::class, 'index']);//index é o nome da action
+Route::get('/', [EventController::class, 'index'])->name('home');//index é o nome da action
 Route::get('/events/sobre', [EventController::class, 'sobre']);//create é o nome da action
 
 Route::get('/events/contact',[ContactController::class,'contact']);

@@ -7,5 +7,23 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'title',
+        'description',
+        'city',
+        'private',
+        'date',
+        'amount',
+        'user_id'
+    ];
+
+    /**
+     * Get the user associated with the Event
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function user(): HasOne
+    {
+        return $this->hasOne(User::class, 'user_id');
+    }
 }

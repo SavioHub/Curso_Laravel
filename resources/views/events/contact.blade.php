@@ -2,7 +2,7 @@
 @extends('layouts.main')
 @section('content')
 
-<div id="contact-container" class="container">
+<div id="contact-container" class="container d-flex flex-column justify-content-center align-items-center">
     
     <form action="/events" method="POST">
         @csrf
@@ -59,6 +59,7 @@
             </div>
 
            
+        </form>
         </div>
         {{-- Flash Message inicio --}}
         <main>
@@ -71,7 +72,7 @@
                         </div>
                     @endif
 
-                    <a id="link-home" href="/"> 
+                    <a id="link-home" href="{{ route('home') }}"> 
                         <button class="but">HOME</button>
                     </a>
                     
@@ -80,6 +81,5 @@
             </div>
         </main>
         {{-- Flash Message fim --}}
-    </form>
 </div>
 @endsection
