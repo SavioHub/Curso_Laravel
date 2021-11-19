@@ -14,7 +14,7 @@
         @foreach ($events as $event)
 
             <div class="card col-md-3">
-                <img src="/img/Agro_vendas.png" alt="{{$event->title}}">
+                {{-- <img src="img/events/{{$event->image}}" alt="{{$event->title}}"> --}}
                 
                 <div class="card-body">
                     <p class="card-date">{{$event->date}}</p>
@@ -23,7 +23,7 @@
                     <a href="#" class="btn btn-primary" id="btn">Saber nais</a>
                 </div>
 
-                <img src="/img/Agro_vendas.png" alt="{{$event->title}}">
+                {{-- <img src="img/events/{{$event->image}}" alt="{{$event->title}}"> --}}
                 <div class="card-body">
                     <p class="card-date">{{$event->date}}</p>
                     <h5 class="card-title">{{$event->title}}</h5>
@@ -31,7 +31,7 @@
                     <a href="#" class="btn btn-primary" id="btn">Saber nais</a>
                 </div>
 
-                <img src="/img/Agro_vendas.png" alt="{{$event->title}}">
+                {{-- <img src="img/events/{{$event->image}}" alt="{{$event->title}}"> --}}
                 <div class="card-body">
                     <p class="card-date">{{$event->date}}</p>
                     <h5 class="card-title">{{$event->title}}</h5>

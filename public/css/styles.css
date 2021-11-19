@@ -48,12 +48,12 @@
 }
 
 #events-container .card{
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 1rem;
     padding: 0;
 
-    margin: 1rem;
+    margin: .5%;
 }
 
 #events-container #cards-container .card img{

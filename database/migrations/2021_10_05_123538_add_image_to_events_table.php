@@ -17,7 +17,7 @@ class AddImageToEventsTable extends Migration
             $table->string('image');
         });
     }
-
+       
     /**
      * Reverse the migrations.
      *

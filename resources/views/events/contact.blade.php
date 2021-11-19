@@ -4,31 +4,27 @@
 
 <div id="contact-container" class="container d-flex flex-column justify-content-center align-items-center">
     
+    {{-- <form action="{{ Route('store') }}" method="POST" enctype="multipart/form-data"> --}}
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
         
         <div class="container-beta">
             <h1 id="teste">Crie o seu evento</h1>
             
-            <div class="form-container">
-                <label class="contact-title" class="contact-title" for="image">Imagem do Evento:</label>
-
+            {{-- <div class="form-container">
+                <label class="contact-title" for="image">Imagem do Evento:</label>
                 <input type="file" id="image" name="image" class="from-control-file">
-            </div>
+            </div> --}}
 
             <div class="form-container">
                 <label class="contact-title" class="contact-title" for="title">Evento:</label>
-
                 <label for="title" class="sr-only">Nome do evento</label>
-
                 <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
             </div>
     
             <div class="form-container">
                 <label class="contact-title" for="title">Cidade:</label>
-
                 <label class="sr-only" for="city" class="form-control">Nome do evento</label>
-
                 <input type="text" class="form-control" id="city" name="city" placeholder="Local de produção">
             </div>
     
